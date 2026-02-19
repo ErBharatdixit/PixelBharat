@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# 🚀 Dixit Parth | Modern Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify)](https://poetic-dieffenbachia-5f800c.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2025-blue?style=for-the-badge&logo=react)](https://poetic-dieffenbachia-5f800c.netlify.app/)
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio! This project showcases my journey as a Full-Stack Developer, featuring interactive UI components, dynamic theme systems, and AI-powered experiences.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🎨 Dynamic Theme System**: Aesthetic accent color shifts that affect the entire UI synchronously.
+- **🤖 Built-in AIChatbot**: An integrated AI assistant to help visitors learn more about my work.
+- **🔊 Audio Feedback**: Subtle micro-interactions with synthesized sound effects for a premium feel.
+- **🖱️ Custom Cursor**: Interactive cursor with magnetic effects and state-dependent scaling.
+- **📱 Fully Responsive**: Optimized for all screen sizes from mobile to wide desktops.
+- **⚡ Smooth Performance**: Powered by Vite, React 19, and Framer Motion for buttery-smooth animations.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Frontend Core
+![React 19](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Animations & UI
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+![Lucide Icons](https://img.shields.io/badge/Lucide_React-000000?style=for-the-badge&logo=lucide)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🏗️ Project Structure
+
+```bash
+├── src/
+│   ├── components/  # Atomic UI components
+│   ├── sections/    # Page sections (Hero, About, Projects, etc.)
+│   ├── context/     # Application-wide state (Theme, Audio)
+│   ├── hooks/       # Custom React hooks (useSound, useTheme)
+│   └── assets/      # Static files and media
+└── public/          # Publicly accessible assets
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
+
+- Node.js (Latest LTS recommended)
+- npm or pnpm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ErBharatdixit/PixelBharat.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📬 Contact Me
+
+Let's collaborate on something amazing!
+
+- **Name**: Dixit Parth
+- **Email**: [bharat010703@gmail.com](mailto:bharat010703@gmail.com)
+- **WhatsApp**: [+91 70688 76861](https://wa.me/917068876861)
+- **GitHub**: [@ErBharatdixit](https://github.com/ErBharatdixit)
+
+---
+
+*Built with ❤️ by Dixit Parth*
