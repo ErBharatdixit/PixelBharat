@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const skills = [
-      { category: "Languages", items: ["Java", "JavaScript", "SQL", "HTML/CSS"] },
+      { category: "Languages", items: ["Java", "JavaScript", "Python", "SQL", "HTML/CSS"] },
       { category: "Frontend", items: ["React.js", "Tailwind CSS", "Redux", "Framer Motion"] },
-      { category: "Backend", items: ["Node.js", "Express.js", "REST APIs", "Authentication (JWT/Passport)"] },
-      { category: "Databases & Tools", items: ["MongoDB", "MySQL", "Git", "GitHub", "Visual Studio Code"] },
+      { category: "Backend", items: ["Node.js", "Express.js", "FastAPI", "REST APIs", "JWT/Passport"] },
+      { category: "AI & Tools", items: ["Gemini AI", "RAG Pipeline", "Machine Learning", "MongoDB", "Git"] },
 ];
 
 export const Skills = () => {

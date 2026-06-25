@@ -1,38 +1,59 @@
 import { motion } from 'framer-motion';
 import { Github, Code, Award, Flame } from 'lucide-react';
-
-const stats = [
-      {
-            label: 'GitHub Contributions',
-            value: '500+',
-            icon: Github,
-            color: 'text-white',
-            link: 'https://github.com/ErBharatdixit'
-      },
-      {
-            label: 'LeetCode Solved',
-            value: '200+',
-            icon: Code,
-            color: 'text-yellow-500',
-            link: 'https://leetcode.com/ErBharatdixit'
-      },
-      {
-            label: 'Projects Completed',
-            value: '15+',
-            icon: Award,
-            color: 'text-blue-400',
-            link: '#projects'
-      },
-      {
-            label: 'Current Learning Streak',
-            value: '45 Days',
-            icon: Flame,
-            color: 'text-orange-500',
-            link: '#'
-      }
-];
+import { useEffect, useState } from 'react';
 
 export const LiveStats = () => {
+      const [githubStats, setGithubStats] = useState({ repos: '...', followers: '...' });
+
+      useEffect(() => {
+            const fetchGithubData = async () => {
+                  try {
+                        const response = await fetch('https://api.github.com/users/ErBharatdixit');
+                        const data = await response.json();
+                        if (data.public_repos !== undefined) {
+                              setGithubStats({
+                                    repos: data.public_repos.toString(),
+                                    followers: data.followers.toString()
+                              });
+                        }
+                  } catch (error) {
+                        console.error("Failed to fetch GitHub stats", error);
+                  }
+            };
+            fetchGithubData();
+      }, []);
+
+      const stats = [
+            {
+                  label: 'GitHub Repositories',
+                  value: githubStats.repos,
+                  icon: Github,
+                  color: 'text-white',
+                  link: 'https://github.com/ErBharatdixit'
+            },
+            {
+                  label: 'GitHub Followers',
+                  value: githubStats.followers,
+                  icon: Award,
+                  color: 'text-blue-400',
+                  link: 'https://github.com/ErBharatdixit'
+            },
+            {
+                  label: 'LeetCode Solved',
+                  value: '200+',
+                  icon: Code,
+                  color: 'text-yellow-500',
+                  link: 'https://leetcode.com/ErBharatdixit'
+            },
+            {
+                  label: 'Current Learning Streak',
+                  value: '45 Days',
+                  icon: Flame,
+                  color: 'text-orange-500',
+                  link: '#'
+            }
+      ];
+
       return (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
                   {stats.map((stat, index) => (
@@ -45,7 +66,7 @@ export const LiveStats = () => {
                               whileInView={{ opacity: 1, y: 0 }}
                               viewport={{ once: true }}
                               transition={{ duration: 0.5, delay: index * 0.1 }}
-                              className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all group relative overflow-hidden"
+                              className="p-6 rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-white/20 hover:bg-white/10 transition-all group relative overflow-hidden backdrop-blur-sm"
                         >
                               <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
                                     <stat.icon className="w-12 h-12" />

@@ -37,8 +37,15 @@ const projects = [
             image: "/projects/expense_tracker.png",
             github: "#",
             demo: "https://expenseml-frontend.onrender.com/"
+      },
+      {
+            title: "AI Document & Loan Assistant",
+            desc: "Next-gen AI financial assistant with RAG pipeline, document uploading, eligibility checking, missing document detection, and loan comparison.",
+            tags: ["React", "Node.js", "Gemini 2.5", "RAG", "MongoDB"],
+            image: "/projects/ai_loan.png",
+            github: "https://github.com/ErBharatdixit",
+            demo: "https://ai-loan-document-assistent-1.onrender.com/"
       }
-
 ];
 
 export const Projects = () => {

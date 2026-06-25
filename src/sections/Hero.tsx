@@ -2,11 +2,14 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { LiveStats } from "../components/LiveStats";
 import { useSound } from "../hooks/useSound";
+import { NetworkBackground } from "../components/NetworkBackground";
 
 export const Hero = () => {
       const { playSound } = useSound();
       return (
             <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+                  <NetworkBackground />
+                  
                   {/* Background Glow */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent-primary/20 rounded-full blur-[120px] -z-10" />
                   <div className="absolute top-1/3 right-1/4 w-[300px] h-[300px] bg-accent-secondary/10 rounded-full blur-[80px] -z-10" />
