@@ -1,7 +1,7 @@
-# 🚀 Dixit Parth | Modern Portfolio
+# 🚀 Dixit BHARAT | Modern Portfolio
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=netlify)](https://poetic-dieffenbachia-5f800c.netlify.app/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-2025-blue?style=for-the-badge&logo=react)](https://poetic-dieffenbachia-5f800c.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2026-blue?style=for-the-badge&logo=react)](https://poetic-dieffenbachia-5f800c.netlify.app/)
 
 Welcome to my personal portfolio! This project showcases my journey as a Full-Stack Developer, featuring interactive UI components, dynamic theme systems, and AI-powered experiences.
 
@@ -79,11 +79,11 @@ Welcome to my personal portfolio! This project showcases my journey as a Full-St
 
 Let's collaborate on something amazing!
 
-- **Name**: Dixit Parth
+- **Name**: Dixit Bharat
 - **Email**: [bharat010703@gmail.com](mailto:bharat010703@gmail.com)
 - **WhatsApp**: [+91 70688 76861](https://wa.me/917068876861)
 - **GitHub**: [@ErBharatdixit](https://github.com/ErBharatdixit)
 
 ---
 
-*Built with ❤️ by Dixit Parth*
+*Built with ❤️ by Dixit Bharat*
