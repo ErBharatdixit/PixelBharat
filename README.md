@@ -9,12 +9,15 @@ Welcome to my personal portfolio! This project showcases my journey as a Full-St
 
 ## ✨ Key Features
 
+- **🧠 Interactive Neural Network**: A stunning HTML Canvas-based particle system that reacts to mouse movements.
+- **🎙️ Voice-Controlled Navigation**: Hands-free browsing utilizing the native Web Speech API (say "Go to Projects").
+- **👾 Hacker Mode (Easter Egg)**: Type "hacker" anywhere to transform the portfolio into a full-screen Matrix-style terminal!
+- **📈 Live GitHub Stats**: Real-time fetching of GitHub repositories and followers directly from the GitHub API.
 - **🎨 Dynamic Theme System**: Aesthetic accent color shifts that affect the entire UI synchronously.
 - **🤖 Built-in AIChatbot**: An integrated AI assistant to help visitors learn more about my work.
+- **📜 Advanced Scroll Animation**: Sleek `framer-motion` scroll progress bars and smooth Lenis scrolling.
 - **🔊 Audio Feedback**: Subtle micro-interactions with synthesized sound effects for a premium feel.
-- **🖱️ Custom Cursor**: Interactive cursor with magnetic effects and state-dependent scaling.
-- **📱 Fully Responsive**: Optimized for all screen sizes from mobile to wide desktops.
-- **⚡ Smooth Performance**: Powered by Vite, React 19, and Framer Motion for buttery-smooth animations.
+- **SEO Optimized**: Fully integrated Open Graph, Twitter Cards, and custom meta tags for flawless social sharing.
 
 ---
 
